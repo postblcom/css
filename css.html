@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>オリジナルCSSフレームワーク</title>
+    <link rel="stylesheet" href="postbl.css">
+    <style>
+       
+    </style>
+    
+</head>
+
+<body>
+	
+	<header class="header">
+        <div class="header-container">
+            <a href="#" class="header-logo">MySite</a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-icon">&#9776;</label>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                    <li class="nav-item nav-dropdown">
+                        <a href="#" class="nav-link">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-link">Web Design</a></li>
+                            <li><a href="#" class="dropdown-link">SEO</a></li>
+                            <li><a href="#" class="dropdown-link">Marketing</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+                <form action="#" class="search-form">
+                    <input type="text" class="search-input" placeholder="Search...">
+                    <button type="submit" class="search-button">Go</button>
+                </form>
+            </nav>
+        </div>
+    </header>
+    
+    
+
+<!-- グリッドシステム -->
+<div class="container">
+    <div class="row">
+        <div class="col-4">Column 1</div>
+        <div class="col-4">Column 2</div>
+        <div class="col-4">Column 3</div>
+    </div>
+</div>
+
+<!-- ボタン -->
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <a href="#" class="button button-primary">Primary Button</a>
+            <a href="#" class="button button-secondary">Secondary Button</a>
+            <a href="#" class="button button-success">Success Button</a>
+            <a href="#" class="button button-danger">Danger Button</a>
+        </div>
+    </div>
+</div>
+
+<div class="alert">
+    <span class="alert-icon">⚠️</span>
+    <span class="alert-message">これは警告メッセージです。</span>
+</div>
+
+
+
+
+
+
+
+
+<!-- アコーディオン -->
+<div class="accordion">
+    <div class="accordion-item">
+        <input type="checkbox" id="accordion1" class="accordion-checkbox">
+        <label for="accordion1" class="accordion-header">Section 1</label>
+        <div class="accordion-content">
+            <p>Content for section 1.</p>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <input type="checkbox" id="accordion2" class="accordion-checkbox">
+        <label for="accordion2" class="accordion-header">Section 2</label>
+        <div class="accordion-content">
+            <p>Content for section 2.</p>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <input type="checkbox" id="accordion3" class="accordion-checkbox">
+        <label for="accordion3" class="accordion-header">Section 3</label>
+        <div class="accordion-content">
+            <p>Content for section 3.</p>
+        </div>
+    </div>
+</div>
+
+<!-- ナビゲーションバー -->
+<nav class="navbar">
+    <div class="navbar-container">
+        <a href="#" class="navbar-logo">MySite</a>
+        <input type="checkbox" id="navbar-toggle" class="navbar-checkbox">
+        <label for="navbar-toggle" class="navbar-icon">&#9776;</label>
+        <ul class="navbar-menu">
+            <li class="navbar-item"><a href="#" class="navbar-link">Home</a></li>
+            <li class="navbar-item"><a href="#" class="navbar-link">About</a></li>
+            <li class="navbar-item"><a href="#" class="navbar-link">Services</a></li>
+            <li class="navbar-item"><a href="#" class="navbar-link">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- タブ -->
+<div class="tabs">
+    <input type="radio" id="tab1" name="tab-control" checked>
+    <input type="radio" id="tab2" name="tab-control">
+    <input type="radio" id="tab3" name="tab-control">
+    <ul>
+        <li title="Features"><label for="tab1" role="button"><span>Features</span></label></li>
+        <li title="Delivery Contents"><label for="tab2" role="button"><span>Delivery Contents</span></label></li>
+        <li title="Shipping"><label for="tab3" role="button"><span>Shipping</span></label></li>
+    </ul>
+    <div class="content">
+        <section>
+            <h2>Features</h2>
+            <p>Content for Features tab.</p>
+        </section>
+        <section>
+            <h2>Delivery Contents</h2>
+            <p>Content for Delivery Contents tab.</p>
+        </section>
+        <section>
+            <h2>Shipping</h2>
+            <p>Content for Shipping tab.</p>
+        </section>
+    </div>
+</div>
+
+
+
+
+
+<section class="dynamic-section">
+    <h2>Dynamic Section</h2>
+    <p>This section appears to float above the rest of the content, giving a dynamic and eye-catching effect.</p>
+
+
+</section>
+
+
+
+
+
+<!-- フッター -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <h4>About Us</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
+       
+
+<form class="form">
+    <div class="form-group">
+        <label for="name">名前</label>
+        <input type="text" id="name" class="form-control" placeholder="名前を入力してください">
+    </div>
+    <div class="form-group">
+        <label for="email">メールアドレス</label>
+        <input type="email" id="email" class="form-control" placeholder="メールアドレスを入力してください">
+    </div>
+    <div class="form-group">
+        <label>性別</label>
+        <div class="form-radio-group">
+            <input type="radio" id="male" name="gender" class="form-radio">
+            <label for="male">男性</label>
+            <input type="radio" id="female" name="gender" class="form-radio">
+            <label for="female">女性</label>
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <label for="hobbies">趣味</label>
+        <div class="form-checkbox-group">
+            <input type="checkbox" id="hobby1" class="form-checkbox">
+            <label for="hobby1">読書</label>
+            <input type="checkbox" id="hobby2" class="form-checkbox">
+            <label for="hobby2">映画</label>
+            <input type="checkbox" id="hobby3" class="form-checkbox">
+            <label for="hobby3">旅行</label>
+        </div>
+    </div>
+    
+    
+    <div class="form-group">
+        <label for="country">国</label>
+        <select id="country" class="form-control">
+            <option value="">選択してください</option>
+            <option value="japan">日本</option>
+            <option value="usa">アメリカ</option>
+            <option value="uk">イギリス</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="form-button">送信</button>
+    </div>
+</form>
+
+
+ </div>
+        <div class="footer-column">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Contact Us</h4>
+            <p>Email: info@example.com</p>
+            <p>Phone: +123 456 7890</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 postbl.com. All rights reserved.</p>
+    </div>
+</footer>
+
+
+
+</body>
+</html>
